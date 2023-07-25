@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w33 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.w50 {
+    padding: 0 2%;
+    width: 50%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* STYLE */
+
+header {
+    padding: 20px 0px;
+    background-color: #3d437a;
+}
+
+header .logo {
+    font-size: 23px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.desktop ul {
+    position: relative;
+    top: 7px;
+    list-style-type: none;
+}
+
+nav.desktop li {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav.desktop a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.mobile {
+    display: none;
+}
+
+.banner-principal {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/business.jpg);
+    background-image: cover;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.4);
+    z-index: 1;
+}
+
+section.banner-principal form {
+    width: 98%;
+    max-width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+section.banner-principal form h2 {
+    font-weight: 300;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+section.banner-principal form input[type="email"] {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 22px;
+    color: #333;
+    padding-left: 10px;
+    border: 0;
+    margin-top: 10px;
+}
+
+section.banner-principal form input[type="email"]:focus {
+    outline: none;
+}
+
+section.banner-principal form input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #00c59e;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.descricao-autor {
+    padding: 30px 0px;
+}
+
+section.descricao-autor h2,
+section.descricao-autor p {
+    color: #444;
+}
+
+section.descricao-autor h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+section.descricao-autor p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+}
+
+section.especialidades {
+    padding: 40px 0px;
+    background-color: #e2e2e2;
+}
+
+section.especialidades h2.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+}
+
+.box-especialidade {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.box-especialidade h3.fa-brands {
+    font-size: 39px;
+    color: #404580;
+    margin-bottom: 10px;
+}
+
+.box-especialidade h3:not(h3.fa-brands) {
+    font-weight: 300;
+    color: #bababa;
+    font-size: 25px;
+}
+
+.box-especialidade p {
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px;
+}
+
+section.extras {
+    padding: 30px 0px;
+    background-color: #404580;
+
+}
+
+section.extras .title {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.depoimento-single {
+    padding: 15px 0px;
+    border-bottom: 1px solid #5056a0;
+}
+
+.depoimento-descricao {
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.nome-autor {
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+.serv-cont, .depo-cont {
+    padding: 0 2%;
+}
+
+.servicos ul {
+    margin-top: 20px 0px;
+    list-style-position: inside;
+}
+
+.servicos li {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+    background-color: #313462;
+    padding: 30px 0px;
+}
+
+footer.fixo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+div.e-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 40px 0px;
+}
+
+div.e-404 h1, div.e-404 p {
+    margin-bottom: 40px;
+}
+
+div.e-404 h1 {
+    font-size: 50px;
+}
+
+div.e-404 p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    nav.mobile ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    nav.mobile li {
+        padding: 10px 0px;
+        font-size: 23px;
+        border-bottom: 1px solid #444;
+    }
+
+    nav.mobile a {
+        text-decoration: none;
+        color: #444;
+        font-weight: 300;
+    }
+
+    .botao-menu-mobile {
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    img {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    .w50 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .w33 {
+        width: 100%;
+    }
+}
